@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <link rel="shortcut icon" href="./src/img/logos/logo-no-text.png" type="image/x-icon">
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3aaca99d8f.js" crossorigin="anonymous"></script>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="stylesheet" href="./src/css/products.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+
+    <title>Products - Room Rise</title>
+
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="lds-dual-ring">
+            <span>RoomRise...</span>
+        </div>
+    </div>
+    
+
+    <!--  LOGIN WINDOW  -->
+    <div class="login-window">
+        <div class="login-wrapper">
+    
+            <i class="fa-regular fa-circle-xmark login-close"></i>
+    
+    
+            <div class="login-left">
+                        
+                <h3>Login</h3>
+    
+                <form class="login-form">
+                    <label for="login-form-email">Email Adress</label> <br>
+                    <input type="email" class="login-form-email" id="login-form-email"> <br>
+    
+                    <label for="login-form-password">Password</label> <br>
+                    <input type="password" class="login-form-password" id="login-form-password"> <br>
+    
+                    <input type="checkbox" id="login-form-checkbox" id="login-form-checkbox" class="login-form-checkbox">
+                    <label for="login-form-checkbox">Remember me</label> <br>
+    
+                    <input type="submit" class="login-form-submit" value="Log In">
+                </form>
+    
+                <a href="#">Lost your password?</a>
+                <a href="#" class="register-now-link">Register an account</a>
+    
+            </div>
+            <div class="login-right">
+    
+                <div class="not-member">
+                    <h3>Register</h3>
+                    <p>Don't have an account? Register one!</p>
+                    <button class="register-now-btn">Register now</button>
+                </div>
+    
+                <div class="register-now">
+                    <h3>Register an Account</h3>
+    
+                    <form class="register-form">
+                        <label for="register-input-name">Username</label> <br>
+                        <input type="text" class="register-input-name" id="register-input-name"> <br>
+    
+                        <label for="register-input-email">Email Adress</label> <br>
+                        <input type="email" class="register-input-email" id="register-input-email"> <br>
+    
+                        <label for="register-input-password">Password</label> <br>
+                        <input type="password" class="register-input-password" id="register-input-password"> <br>
+    
+                        <input type="submit" class="register-form-submit" value="Register">
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img src="./src/img/logos/logo-text.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right">
+                
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="./index.html">Home</a></li>
+                        <li><a class="nav-link" href="./products.html">Products</a></li>
+                        <li><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <div class="user">
+                        <span class="login-button">Login</span>
+                    </div>
+                    <div class="cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span class="cart-number"></span>
+                    </div>
+                    <div class="hamburger">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="close-menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- PRODUCTS -->
+        <section class="products">
+
+            <h3 class="products-title">Our products</h3>
+
+            <div class="products-wrapper">
+
+                <div class="filter">
+
+                    <span class="filter-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+
+                    <button class="filter-btn filter-all">Show all</button>
+                    <button class="filter-btn filter-bathroom">Bathroom</button>
+                    <button class="filter-btn filter-bedroom">Bedroom</button>
+                    <button class="filter-btn filter-kitchen">Kitchen</button>
+                    <button class="filter-btn filter-lights">Lights</button>
+                    <button class="filter-btn filter-livingroom">Living Room</button>
+                </div>
+
+                <button class="filter-mobile"><ion-icon name="filter-outline"></ion-icon> Filter</button>
+
+                <div class="filtered"><!-- innerHTML --></div>
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <a href="./index.html"><img src="./src/img/logos/logo-text.png" alt="RoomRise Logo"></a>
+                </div>
+            </div>
+
+            <div class="footer-center">
+
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-right">
+
+                <h4>Working Hours</h4>
+
+                <p>Mon - Fri: 9:00AM - 9:00PM</p>
+                <p>Sat - Sun: 10:00AM - 7:00PM</p>
+            </div>
+
+        </div>
+
+        <div class="footer-info">
+            <p>All images generated by AI.</p>
+            <p>Designed and coded by <a href="#">Jiří Linduška</a></p>
+            <p>© 2023 All right reserved.</p>
+        </div>
+    </footer>
+
+
+    
+
+    <!-- test -->
+    <script src="./src/js/script.js"></script>
+
+    <script src="./src/js/loader.js"></script>
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/products.js"></script>
+
+</body>
+</html>

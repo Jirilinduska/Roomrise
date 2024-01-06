@@ -1,0 +1,33 @@
+$breakpoints: (
+    'sm': 480px,
+    'md': 720px,
+    'lg': 960px,
+    'xl': 1200px,
+);
+
+// 0 - 480
+@mixin sm () {
+    @media (max-width: map-get($breakpoints, 'sm')) {
+        @content;
+    }
+}
+// 481 - 720
+@mixin md () {
+    @media (max-width: map-get($breakpoints, 'md')) {
+        @content;
+    }
+}
+
+// 721 - 960
+@mixin lg () {
+    @media (max-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+// 961 - 1200
+@mixin xl () {
+    @media (max-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <link rel="shortcut icon" href="./src/img/logos/logo-no-text.png" type="image/x-icon">
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3aaca99d8f.js" crossorigin="anonymous"></script>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+
+    <title>Welcome to Room Rise</title> 
+
+</head>
+<body>
+    
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="lds-dual-ring">
+            <span>RoomRise...</span>
+        </div>
+    </div>
+
+    <!--  LOGIN WINDOW  -->
+    <div class="login-window">
+        <div class="login-wrapper">
+    
+            <i class="fa-regular fa-circle-xmark login-close"></i>
+    
+    
+            <div class="login-left">
+                        
+                <h3>Login</h3>
+    
+                <form class="login-form">
+                    <label for="login-form-email">Email Adress</label> <br>
+                    <input type="email" class="login-form-email" id="login-form-email"> <br>
+    
+                    <label for="login-form-password">Password</label> <br>
+                    <input type="password" class="login-form-password" id="login-form-password"> <br>
+    
+                    <input type="checkbox" id="login-form-checkbox" id="login-form-checkbox" class="login-form-checkbox">
+                    <label for="login-form-checkbox">Remember me</label> <br>
+    
+                    <input type="submit" class="login-form-submit" value="Log In">
+                </form>
+    
+                <a href="#">Lost your password?</a>
+                <a href="#" class="register-now-link">Register an account</a>
+    
+            </div>
+            <div class="login-right">
+    
+                <div class="not-member">
+                    <h3>Register</h3>
+                    <p>Don't have an account? Register one!</p>
+                    <button class="register-now-btn">Register now</button>
+                </div>
+    
+                <div class="register-now">
+                    <h3>Register an Account</h3>
+    
+                    <form class="register-form">
+                        <label for="register-input-name">Username</label> <br>
+                        <input type="text" class="register-input-name" id="register-input-name"> <br>
+    
+                        <label for="register-input-email">Email Adress</label> <br>
+                        <input type="email" class="register-input-email" id="register-input-email"> <br>
+    
+                        <label for="register-input-password">Password</label> <br>
+                        <input type="password" class="register-input-password" id="register-input-password"> <br>
+    
+                        <input type="submit" class="register-form-submit" value="Register">
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img src="./src/img/logos/logo-text.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right">
+                
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="./index.html">Home</a></li>
+                        <li><a class="nav-link" href="./products.html">Products</a></li>
+                        <li><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <div class="user">
+                        <span class="login-button">Login</span>
+                    </div>
+                    <div class="cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span class="cart-number"></span>
+                    </div>
+                    <div class="hamburger">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="close-menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="bg-filter"></div>
+            <h1>Welcome to Room Rise</h1>
+            <h3>Discover Stylish Furniture for Your Perfect Home</h3>
+            <a href="./index.html#featured">Show Products</a>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="featured" id="featured">
+            <h3>Featured products</h3>
+            <a href="./products.html">View all</a>
+
+            <div class="featured-wrapper"><!-- innerHTML --></div>
+        </section>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+            <div class="cards-wrapper">
+
+                <div class="card card-kitchen">
+                    <div class="card-image">
+                        <img src="./src/img/items/kitchen-3.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h4>Modern Kitchen</h4>
+                    </div>
+                </div>
+
+                <div class="card card-bedroom">
+                    <div class="card-image">
+                        <img src="./src/img/items/bedroom-1.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h4>Elegant Bedrooms</h4>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="about">
+            <div class="about-left">
+                <h3>Elevate Your Living Space with Style!</h3>
+                <p>We are a team of passionate design enthusiasts curating an inspirational collection with a focus on quality and distinctive style. At Room Rise, we go beyond being just an online store; we are a distilled essence of modern design for your home.</p>
+            </div>
+            <div class="about-right"></div>
+        </section>
+
+        <!-- NEWS -->
+        <section class="news">
+            <div class="news-wrapper">
+                <h3>our newsletter</h3>
+                <p>Be the first to ge exclusive offers and the latest news</p>
+
+                <form action="" id="news">
+                    <div class="news-inputs">
+                        <input type="email" id="news-name" placeholder="Drop your email">
+                        <input type="submit" id="news-button" value="Subscribe">
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- REVIEW -->
+        <section class="review">
+
+            <h3>What customers say...</h3>
+
+            <div class="review-wrapper">
+
+                <div class="review-item">
+                    
+                    <div class="review-image">
+                        <img src="./src/img/section-review/customer-1.avif" alt="customer-1">
+                    </div>
+
+                    <div class="review-info">
+                        <p class="review-name">David P.</p>
+                        <p class="review-subtitle">Customer</p>
+                        <p class="review-text">Room Rise exceeded my expectations! Stylish furniture, impeccable quality. My modern table and chair transformed my space. Fast delivery, excellent service. Will return for more home upgrades!</p>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    
+                    <div class="review-image">
+                        <img src="./src/img/section-review/customer-2.jpg" alt="customer-2">
+                    </div>
+
+                    <div class="review-info">
+                        <p class="review-name">Emily S.</p>
+                        <p class="review-subtitle">Customer</p>
+                        <p class="review-text">Roomrise is a haven for furniture enthusiasts like me. The exquisite collection blends style with comfort seamlessly. The website's user-friendly interface made my shopping experience delightful. Highly recommend for chic home transformations!</p>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    
+                    <div class="review-image">
+                        <img src="./src/img/section-review/customer-3.jpg" alt="customer-3">
+                    </div>
+
+                    <div class="review-info">
+                        <p class="review-name">Alex M.</p>
+                        <p class="review-subtitle">Customer</p>
+                        <p class="review-text">Roomrise exceeded my expectations. The curated furniture selection and diverse styles appealed to my taste. Navigating the site was smooth, and the quality of the purchased items proved Roomrise's commitment to excellence. Impressive!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>  
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82371.41637804585!2d16.556964307024238!3d49.19370703523311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712943ac03f5111%3A0x400af0f6614b1b0!2sBrno!5e0!3m2!1sen!2scz!4v1703782087403!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-right">
+                    <h3>Contact us</h3>
+
+                    <form id="contact">
+                        <input type="text" id="contact-name" placeholder="Your name..."> <br>
+                        <input type="email" id="contact-mail" placeholder="Your email..."> <br>
+                        <textarea placeholder="Your message..."></textarea> <br>
+                        <input type="submit" id="contact-submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <a href="./index.html"><img src="./src/img/logos/logo-text.png" alt="RoomRise Logo"></a>
+                </div>
+            </div>
+
+            <div class="footer-center">
+
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-right">
+
+                <h4>Working Hours</h4>
+
+                <p>Mon - Fri: 9:00AM - 9:00PM</p>
+                <p>Sat - Sun: 10:00AM - 7:00PM</p>
+            </div>
+
+        </div>
+
+        <div class="footer-info">
+            <p>All images generated by AI.</p>
+            <p>Designed and coded by <a href="#">Jiří Linduška</a></p>
+            <p>© 2023 All right reserved.</p>
+        </div>
+    </footer>
+
+
+
+    
+
+    <!-- test -->
+    <script src="./src/js/script.js"></script>
+
+    <script src="./src/js/loader.js"></script>
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/featured.js"></script>
+    <script src="./src/js/cards.js"></script>
+
+</body>
+</html>

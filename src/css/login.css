@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+.login-window-active {
+  right: 0 !important;
+  transition: 0.7s;
+}
+
+.login-window {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 0.7s;
+  overflow: hidden;
+  z-index: 12000;
+}
+.login-window .login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.login-window .login-wrapper .login-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.login-window .login-wrapper .login-close:hover {
+  transition: 0.7s;
+  color: #000;
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-close {
+    color: #000;
+  }
+  .login-window .login-wrapper .login-close:hover {
+    color: #333333;
+  }
+}
+.login-window .login-wrapper .login-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-left {
+    flex-basis: 100%;
+  }
+}
+.login-window .login-wrapper .login-left h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.login-window .login-wrapper .login-left .login-form {
+  text-align: center;
+}
+.login-window .login-wrapper .login-left .login-form label {
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.login-window .login-wrapper .login-left .login-form .login-form-email,
+.login-window .login-wrapper .login-left .login-form .login-form-password {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-email,
+  .login-window .login-wrapper .login-left .login-form .login-form-password {
+    font-size: 1rem;
+    height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-email,
+  .login-window .login-wrapper .login-left .login-form .login-form-password {
+    font-size: 0.75rem;
+    height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-email,
+  .login-window .login-wrapper .login-left .login-form .login-form-password {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-email,
+  .login-window .login-wrapper .login-left .login-form .login-form-password {
+    width: 200px;
+  }
+}
+.login-window .login-wrapper .login-left .login-form .login-form-checkbox {
+  display: inline-block;
+}
+.login-window .login-wrapper .login-left .login-form .login-form-submit {
+  border: none;
+  outline: none;
+  height: 50px;
+  line-height: 50px;
+  width: 180px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #2169B7;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 3rem 0;
+  width: 150px;
+  background-color: #2169B7;
+  color: #fff;
+}
+.login-window .login-wrapper .login-left .login-form .login-form-submit:hover {
+  background-color: #3182da;
+}
+@media (max-width: 1200px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-submit {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-submit {
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .login-window .login-wrapper .login-left .login-form .login-form-submit {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.75rem;
+  }
+}
+.login-window .login-wrapper .login-left .login-form .login-form-submit:hover {
+  background-color: #3182da;
+}
+.login-window .login-wrapper .login-left a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.7s;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  color: #000;
+}
+.login-window .login-wrapper .login-left a:hover {
+  color: #2169B7;
+}
+.login-window .login-wrapper .login-left .register-now-link {
+  display: none;
+  text-decoration: none;
+  color: #000;
+  transition: 0.7s;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  color: #000;
+}
+.login-window .login-wrapper .login-left .register-now-link:hover {
+  color: #2169B7;
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-left .register-now-link {
+    display: block;
+  }
+}
+.login-window .login-wrapper .login-right {
+  background-color: #2169B7;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-right {
+    display: none;
+    flex-basis: 100%;
+  }
+}
+.login-window .login-wrapper .login-right .not-member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-window .login-wrapper .login-right .not-member h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.login-window .login-wrapper .login-right .not-member p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .login-window .login-wrapper .login-right .not-member p {
+    font-size: 1rem;
+  }
+}
+.login-window .login-wrapper .login-right .not-member .register-now-btn {
+  border: none;
+  outline: none;
+  height: 50px;
+  line-height: 50px;
+  width: 180px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #2169B7;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.7s;
+  width: 300px;
+  background-color: #fff;
+  color: #000;
+}
+.login-window .login-wrapper .login-right .not-member .register-now-btn:hover {
+  background-color: #3182da;
+}
+@media (max-width: 1200px) {
+  .login-window .login-wrapper .login-right .not-member .register-now-btn {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-right .not-member .register-now-btn {
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .login-window .login-wrapper .login-right .not-member .register-now-btn {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.75rem;
+  }
+}
+.login-window .login-wrapper .login-right .not-member .register-now-btn:hover {
+  background-color: #f2f2f2;
+}
+.login-window .login-wrapper .login-right .register-now {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-window .login-wrapper .login-right .register-now h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 480px) {
+  .login-window .login-wrapper .login-right .register-now h3 {
+    font-size: 1.5rem;
+  }
+}
+.login-window .login-wrapper .login-right .register-now .register-form {
+  text-align: center;
+}
+.login-window .login-wrapper .login-right .register-now .register-form .register-input-name,
+.login-window .login-wrapper .login-right .register-now .register-form .register-input-email,
+.login-window .login-wrapper .login-right .register-now .register-form .register-input-password {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-name,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-email,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-password {
+    font-size: 1rem;
+    height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-name,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-email,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-password {
+    font-size: 0.75rem;
+    height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-name,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-email,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-password {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-name,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-email,
+  .login-window .login-wrapper .login-right .register-now .register-form .register-input-password {
+    width: 200px;
+  }
+}
+.login-window .login-wrapper .login-right .register-now .register-form label {
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.login-window .login-wrapper .login-right .register-now .register-form .register-form-submit {
+  border: none;
+  outline: none;
+  height: 50px;
+  line-height: 50px;
+  width: 180px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #2169B7;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 3rem 0;
+  width: 150px;
+  background-color: #fff;
+  color: #000;
+}
+.login-window .login-wrapper .login-right .register-now .register-form .register-form-submit:hover {
+  background-color: #3182da;
+}
+@media (max-width: 1200px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-form-submit {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 960px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-form-submit {
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .login-window .login-wrapper .login-right .register-now .register-form .register-form-submit {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.75rem;
+  }
+}
+.login-window .login-wrapper .login-right .register-now .register-form .register-form-submit:hover {
+  background-color: #f2f2f2;
+}/*# sourceMappingURL=login.css.map */

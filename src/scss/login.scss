@@ -1,0 +1,223 @@
+@import './partials/breakpoints';
+@import './partials/mixins';
+@import './partials/variables';
+
+
+
+.login-window-active {
+    right: 0 !important;
+    transition: $trs;
+}
+
+
+//  LOGIN WINDOW 
+.login-window {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: $trs;
+    overflow: hidden;
+    z-index: 12000;
+
+    .login-wrapper {
+        @include Flex-Center-Between;
+        width: 100%;
+        height: 100%;
+
+        .login-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: $color-white;
+            font-size: 3.5rem;
+            cursor: pointer;
+            transition: $trs;
+
+            &:hover {
+                transition: $trs;
+                color: $color-text;
+            }
+
+            @include lg {
+                color: $color-text;
+
+                &:hover {
+                    color: $color-text-lighten
+                }
+            }
+        }
+
+        .login-left {
+            @include Flex-Center;
+            flex-direction: column;
+            flex-basis: 50%;
+            height: 100%;
+            background-color: $color-white;
+
+            @include lg {
+                flex-basis: 100%;
+            }
+
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            .login-form {
+                text-align: center;
+
+                label {
+                    @include allLabels;
+                }
+
+                .login-form-email,
+                .login-form-password {
+                    @include allInputs;
+
+                    @include sm {
+                        width: 200px;
+                    }
+                }
+
+                .login-form-checkbox {
+                    display: inline-block;
+                }
+
+                .login-form-submit {
+                    @include allButtons;
+                    margin: 3rem 0;
+                    width: 150px;
+                    background-color: $color-blue;
+                    color: $color-white;
+
+                    &:hover {
+                        background-color: $color-blue-lighten;
+                    }
+                }
+            }
+
+            a {
+                @include allLinks;
+                margin-bottom: 2rem;
+                font-size: 1.25rem;
+                text-decoration: underline;
+                color: $color-text;
+
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+
+            .register-now-link {
+                display: none;
+                @include allLinks;
+                margin-bottom: 2rem;
+                font-size: 1.25rem;
+                text-decoration: underline;
+                color: $color-text;
+
+                &:hover {
+                    color: $color-blue;
+                }
+
+                @include lg {
+                    display: block;
+                }
+
+            }
+        }
+
+        .login-right {
+            background-color: $color-blue;
+            flex-basis: 50%;
+            @include Flex-Center;
+            height: 100%;
+            color: $color-white;
+
+            @include lg {
+                display: none;
+                flex-basis: 100%;
+            }
+
+            .not-member {
+                @include Flex-Center;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 2rem;
+                    margin-bottom: 3rem;
+                }
+    
+                p {
+                    font-size: 1.25rem;
+                    margin-bottom: 2rem;
+
+                    @include sm {
+                        font-size: 1rem;
+                    }
+                }
+    
+                .register-now-btn {
+                    @include allButtons;
+                    width: 300px;
+                    background-color: $color-white;
+                    color: $color-text;
+    
+                    &:hover {
+                        background-color: $color-white-darken;
+                    }
+                }
+            }
+
+            .register-now {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 2rem;
+                    margin-bottom: 3rem;
+
+                    @include sm {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .register-form {
+                    text-align: center;
+
+                    .register-input-name,
+                    .register-input-email,
+                    .register-input-password {
+                        @include allInputs;
+
+                        @include sm {
+                            width: 200px;
+                        }
+                    }
+
+                    label {
+                        @include allLabels;
+                    }
+
+                    .register-form-submit {
+                        @include allButtons;
+                        margin: 3rem 0;
+                        width: 150px;
+                        background-color: $color-white;
+                        color: $color-text;
+
+                        &:hover {
+                            background-color: $color-white-darken;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

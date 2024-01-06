@@ -1,0 +1,151 @@
+@import './partials/breakpoints';
+@import './partials/mixins';
+@import './partials/variables';
+
+
+
+.nav-active {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    z-index: 1002;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+// HEADER
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 1001;
+    height: $header-height;
+    box-shadow: $box-shadow-bottom;
+    
+    .header-wrapper {
+        @include container;
+        @include Flex-Center-Between;
+        height: 100%;
+    
+        .header-left {
+            height: 100%;
+
+            .header-logo {
+                height: 100%;
+
+                a {
+                    img {
+                        // width: 100%;
+                        // height: 100%;
+                        width: 100px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .header-right {
+            @include Flex-Center-Between;
+            gap: 50px;
+
+            nav {
+
+                @include lg {
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 30px;
+
+                    @include lg {
+                        flex-direction: column
+                    }
+
+                    li {
+                        a {
+                            @include allLinks;
+                            font-size: 1.25rem;
+
+                            &:hover {
+                                color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-icons {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                height: 100%;
+
+                @include lg {
+                    gap: 15px;
+                }
+
+                .user {
+                    @include allButtons;
+                    width: 70px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 1rem;
+
+                    @include lg {
+                        width: 50px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .cart {
+                    position: relative;
+                    @include allIcons;
+                    font-size: 2rem;
+
+                    .cart-number {  
+                        position: absolute;
+                        display: none;
+                        top: -7px;
+                        right: -10px;
+                        background-color: $color-blue;
+                        width: 20px;
+                        line-height: 20px;
+                        height: 20px;
+                        text-align: center;
+                        border-radius: 50%;
+                        color: $color-white;
+                        font-size: 12px;
+                    }
+                }
+
+                .hamburger {
+                    @include allIcons;
+                    font-size: 2rem;
+                    display: none;
+
+                    @include lg {
+                        display: block;
+                    }
+                }
+
+                .close-menu {
+                    @include allIcons;
+                    font-size: 2rem;
+                    display: none;
+                }
+            }
+        }
+    
+    }
+}

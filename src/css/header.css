@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+.nav-active {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1002;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1001;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .header-wrapper {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header .header-wrapper .header-left {
+  height: 100%;
+}
+header .header-wrapper .header-left .header-logo {
+  height: 100%;
+}
+header .header-wrapper .header-left .header-logo a img {
+  width: 100px;
+  height: 100%;
+}
+header .header-wrapper .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 960px) {
+  header .header-wrapper .header-right nav {
+    display: none;
+  }
+}
+header .header-wrapper .header-right nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+@media (max-width: 960px) {
+  header .header-wrapper .header-right nav ul {
+    flex-direction: column;
+  }
+}
+header .header-wrapper .header-right nav ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.7s;
+  font-size: 1.25rem;
+}
+header .header-wrapper .header-right nav ul li a:hover {
+  color: #2169B7;
+}
+header .header-wrapper .header-right .header-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+@media (max-width: 960px) {
+  header .header-wrapper .header-right .header-icons {
+    gap: 15px;
+  }
+}
+header .header-wrapper .header-right .header-icons .user {
+  border: none;
+  outline: none;
+  height: 50px;
+  line-height: 50px;
+  width: 180px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #2169B7;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.7s;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+}
+header .header-wrapper .header-right .header-icons .user:hover {
+  background-color: #3182da;
+}
+@media (max-width: 1200px) {
+  header .header-wrapper .header-right .header-icons .user {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 960px) {
+  header .header-wrapper .header-right .header-icons .user {
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  header .header-wrapper .header-right .header-icons .user {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 960px) {
+  header .header-wrapper .header-right .header-icons .user {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.75rem;
+  }
+}
+header .header-wrapper .header-right .header-icons .cart {
+  position: relative;
+  color: #000;
+  cursor: pointer;
+  transition: 0.7s;
+  font-size: 2rem;
+}
+header .header-wrapper .header-right .header-icons .cart:hover {
+  color: #2169B7;
+}
+header .header-wrapper .header-right .header-icons .cart .cart-number {
+  position: absolute;
+  display: none;
+  top: -7px;
+  right: -10px;
+  background-color: #2169B7;
+  width: 20px;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+}
+header .header-wrapper .header-right .header-icons .hamburger {
+  color: #000;
+  cursor: pointer;
+  transition: 0.7s;
+  font-size: 2rem;
+  display: none;
+}
+header .header-wrapper .header-right .header-icons .hamburger:hover {
+  color: #2169B7;
+}
+@media (max-width: 960px) {
+  header .header-wrapper .header-right .header-icons .hamburger {
+    display: block;
+  }
+}
+header .header-wrapper .header-right .header-icons .close-menu {
+  color: #000;
+  cursor: pointer;
+  transition: 0.7s;
+  font-size: 2rem;
+  display: none;
+}
+header .header-wrapper .header-right .header-icons .close-menu:hover {
+  color: #2169B7;
+}/*# sourceMappingURL=header.css.map */
