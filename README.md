@@ -7,5 +7,5 @@ I went for a modern & intuitive design with easy-to-use navigation and a simple 
 
 [![My Skills](https://skillicons.dev/icons?i=html,sass,ts&theme=dark)](https://skillicons.dev)
 
-### ![Link](https://emojicombos.com/symbols/link/)
+### [🔗 Live Demo ](https://emojicombos.com/symbols/link/)
 
