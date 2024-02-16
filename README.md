@@ -10,3 +10,4 @@ I went for a modern & intuitive design with easy-to-use navigation and a simple 
 
 ### [🔗 Live Demo ](https://roomrise.vercel.app/)
 
+![project-roomrise](https://github.com/Jirilinduska/roomrise/assets/120704718/0fac414a-8826-40b5-8863-7e786051b250)
