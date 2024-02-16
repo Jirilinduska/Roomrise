@@ -1,8 +1,8 @@
 # RoomRise :shopping_cart:
 
-RoomRise is my **e-comerce** website built with Html, Scss & TypeScript.
+RoomRise is my **e-comerce** website built with html, scss & typescript.
 
-This web-app using LocalStorage for date-storage.
+This web-app using LocalStorage for data-storage.
 
 I went for a modern & intuitive design with easy-to-use navigation and a simple shopping experience.
 
