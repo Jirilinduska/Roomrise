@@ -1,4 +1,4 @@
-# RoomRise
+# RoomRise :shopping_cart:
 
 RoomRise is my **e-comerce** website built with Html, Scss & TypeScript.
 
